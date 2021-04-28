@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="{% url 'address:register' %}" method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="id" name="id">
+            <input type="text" placeholder="subject" name="subject">
+            <input type="text" placeholder="coordination" name="coordination">
+            <button type="submit">جستجو</button>
+        </form>        
+    </body>
+</html>
